@@ -19,7 +19,7 @@ public class Member {
     private String zipcode;
 
     // 예시를 위해 추가
-    @OneToMany(mappedBy = "MEMBER_ID")
+    @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 
     //Member 1:N MemberProduct
