@@ -22,6 +22,10 @@ public class Member {
     @OneToMany(mappedBy = "MEMBER_ID")
     private List<Order> orders = new ArrayList<>();
 
+    //Member 1:N MemberProduct
+    @OneToMany(mappedBy = "member")
+    private List<MemberProduct> memberProducts = new ArrayList<>();
+
 //    @ManyToOne
 //    @JoinColumn(name = "team_id")
 //    private Team team;
