@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Data
-public class Member {
+public class Member extends BaseEntity{
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MEMBER_ID")
@@ -29,4 +29,4 @@ public class Member {
 //    @ManyToOne
 //    @JoinColumn(name = "team_id")
 //    private Team team;
-}
+ }
